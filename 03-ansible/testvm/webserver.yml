@@ -1,6 +1,6 @@
 - hosts: all
-  sudo: True
+  become: yes
   user: vagrant
   tasks:
-    - name: "Atualiza pacotes e instala nginx"
+    - name: "Atualiza pacotes e Instala o Nginx"
       apt: name=nginx state=latest update_cache=yes install_recommends=yes

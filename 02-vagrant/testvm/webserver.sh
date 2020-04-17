@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "Atualizando repositórios"
+echo "Atualizando repositorios"
 sudo apt-get update
-echo "Instalando o nginx"
+echo "Instalando o Nginx"
 sudo apt-get -y install nginx
 echo "Instalando o PHP"
-sudo apt-get install -y php5-fpm
+sudo apt-get install -y php-fpm
