@@ -2,5 +2,5 @@
   become: yes
   user: vagrant
   tasks:
-    - name: "Atualiza pacotes e Instala o Nginx"
+    - name: "Atualiza pacotes e Instala nginx"
       apt: name=nginx state=latest update_cache=yes install_recommends=yes
